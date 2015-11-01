@@ -15,7 +15,7 @@ default: &default
   pool: 5
   username: root
   password:
-  socket: /tmp/mysql.sock
+  # socket: /tmp/mysql.sock
 
 development:
   <<: *default
@@ -51,4 +51,4 @@ production:
   <<: *default
   database: ricky_blog_production
   username: ricky_blog
-  password: <%= ENV['RICKY_BLOG_DATABASE_PASSWORD'] %>
+  password: jsasdw1991
